@@ -1,0 +1,72 @@
+-- MAIN SCENE -- 
+
+1. the heart 
+2. pedestal
+3. floor light 
+4. light direction
+5. hud:
+	- beating rate
+	- tools
+	- mouse art
+
+
+
+-- MECHANICS --
+1.  beating rate: 
+	- if reach the max =  game over;
+	- if reachs 0 = game over;
+	- every new entity on screen raises it;
+2. tools: 
+	- every tool has a cooldown;
+	- use in especific situations;
+
+-- FIRST APARISONS OF ENEMIES -- 
+
+		When a enemy appers for the first time, there will be a "deathscreem" of them.
+	
+-- ENEMIES(at least 10) -- 
+
+1. demonic hands:
+	- reach the heart = raise the beating rate; 
+	- click to dismiss;
+	
+2. sacred spear: 
+	- pierces the heart, leave a wound;
+	- drop the beating rate constantly;
+	- treat the wound with bandage;
+	
+3. evil symbols :
+	- if the ritual is complete, the beating rate goes up a lot;
+	- click on the simbles in sequence to stop;
+4. eyes :
+	- increase the beating rate constrantly;
+	- use the stick to pierce it;
+5. the ghost :
+	- apers in the scren with a white deformed face;
+	- if not shaked he black out the scream	
+6. invisible threath :
+	- get the heart invisible;
+	- you need to find and click in the heart, otherwise is game over;
+7. he's behind you:
+	- 2 hands cover your eyes, making dificult to see;
+	- you need to use the knife twice to get the hands off;
+8. say my name :
+	- a name will be seen in a scream in a ancient language;
+	- you neet to type right, if don't the beating rate will raize 25%;
+9. doppelganger:
+	- you need to obnserve the heart, if is slightly different, you need to click on it;
+	- there a diference between the changing of shape because of the ritual and the doppleganger act, you need to be careful a about that;
+10.earth quake: 
+	- the screen shake, getting dificult to concentrate;
+12.
+13.
+14.
+15.
+
+
+-- SPAW SYSTEM --
+	- the firs session (30sec) will be only demonic hands.
+	- the second, third and forth sections(1,2,3 min) will be 3 or 4 enemies (demonic hands, eyes, evil simbles, ghost and invisible)
+	- the the fifth(5min) will be 5 enemies ast same time (demonic hands, eyes, evil simbles, ghost, invisible, behind, say my name, dopplerganger,eathquake)
+	
+	-each session will change the active enemies
