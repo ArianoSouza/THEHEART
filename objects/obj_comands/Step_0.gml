@@ -35,7 +35,63 @@ if global.bpm > 320{
 }
 
 
-//sacret_spear
+//fases
+
+if global.timer = 300{
+	global.actives[0].active = true
+}else if global.timer = fases[1] {
+	global.actives[choose(1,2,3,4,5,6,7,8)].active = true
+}
+else if global.timer = fases[2] {
+	global.actives[1].active = false
+	global.actives[2].active = false
+	global.actives[3].active = false
+	global.actives[4].active = false
+	global.actives[5].active = false
+	global.actives[6].active = false
+	global.actives[7].active = false
+	global.actives[8].active = false
+	global.actives[choose(1,2,3,4,5,6,7,8)].active = true
+	global.actives[choose(1,2,3,4,5,6,7,8)].active = true
+}
+else if global.timer = fases[3] {
+	global.actives[1].active = false
+	global.actives[2].active = false
+	global.actives[3].active = false
+	global.actives[4].active = false
+	global.actives[5].active = false
+	global.actives[6].active = false
+	global.actives[7].active = false
+	global.actives[8].active = false
+	global.actives[choose(1,2,3,4,5,6,7,8)].active = true
+	global.actives[choose(1,2,3,4,5,6,7,8)].active = true
+}
+else if global.timer = fases[4] {
+	global.actives[1].active = false
+	global.actives[2].active = false
+	global.actives[3].active = false
+	global.actives[4].active = false
+	global.actives[5].active = false
+	global.actives[6].active = false
+	global.actives[7].active = false
+	global.actives[8].active = false
+	global.actives[choose(1,2,3,4,5,6,7,8)].active = true
+	global.actives[choose(1,2,3,4,5,6,7,8)].active = true
+	global.actives[choose(1,2,3,4,5,6,7,8)].active = true
+}
+else if global.timer = fases[5] {
+	global.actives[1].active = false
+	global.actives[2].active = false
+	global.actives[3].active = false
+	global.actives[4].active = false
+	global.actives[5].active = false
+	global.actives[6].active = false
+	global.actives[7].active = false
+	global.actives[8].active = false
+	global.actives[choose(1,2,3,4,5,6,7,8)].active = true
+	global.actives[choose(1,2,3,4,5,6,7,8)].active = true
+	global.actives[choose(1,2,3,4,5,6,7,8)].active = true
+}
 
 
 

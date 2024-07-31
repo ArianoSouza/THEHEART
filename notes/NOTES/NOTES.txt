@@ -26,37 +26,49 @@
 	
 -- ENEMIES(at least 10) -- 
 
-1. demonic hands:
+	This ritual is to powerful. numerous entities are attracted to it. whether to try to disturb for some reason, or simply because of the power emanating from it.
+
+1. demonic hands of the rotten demom:
+	- a hand of a demon that despites our sacred god. the creature have more than 1000 hands to compansate for the weak body that was given, so weak that is amoust rotten. 
 	- reach the heart = raise the beating rate; 
 	- click to dismiss;
 	
-2. sacred spear: 
+2. sacred spear os the golden infinity: 
+	- another god who rivalizes with ours sent his minions to try to prevent his birth. The sacred spear is a magic spear that can hurt the skin of any creature, is remembered for the whit and light grey color, amost pale, and the simble of gold infinity.
 	- pierces the heart, leave a wound;
 	- drop the beating rate constantly;
 	- treat the wound with bandage;
 	
-3. evil symbols :
+3. evil symbols of the cult :
+	- another cult is trying to disturb the ritual. They seem to worship the same god as us, but see the birth as a profane act. The simbles represent a ritual to disturb the heart.
 	- if the ritual is complete, the beating rate goes up a lot;
 	- click on the simbles in sequence to stop;
-4. eyes :
+4. eyes of the unknow god :
+	- eyes of a unknow entity. it seems that this entity is trying to watch the ritual, but the act disturbs it. little is know about this entity, but it not seem harmless.
 	- increase the beating rate constrantly;
 	- use the stick to pierce it;
 5. the ghost :
+	- Some spirits are atracted by the power of the ritual, and tha's seams to distub the ritual;
 	- apers in the scren with a white deformed face;
 	- if not shaked he black out the scream	
 6. invisible threath :
+	- a enormous creature that uses the invisibility to disturb the ritual.
 	- get the heart invisible;
 	- you need to find and click in the heart, otherwise is game over;
 7. he's behind you:
+	- some entities like to play with us.
 	- 2 hands cover your eyes, making dificult to see;
 	- you need to use the knife twice to get the hands off;
 8. say my name :
+	- a very powerfull entity that uses his many names as a way to dement humans minds;
 	- a name will be seen in a scream in a ancient language;
 	- you neet to type right, if don't the beating rate will raize 25%;
 9. doppelganger:
+	- a creature that appers from nowere ans tricks you to atack when we are unaware;
 	- you need to obnserve the heart, if is slightly different, you need to click on it;
 	- there a diference between the changing of shape because of the ritual and the doppleganger act, you need to be careful a about that;
 10.earth quake: 
+	- some entities is so poweful that only the they presence makes the earth shake;
 	- the screen shake, getting dificult to concentrate;
 12.
 13.

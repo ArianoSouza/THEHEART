@@ -1,3 +1,7 @@
+if is_active = false{
+	exit
+}
+
 var quakeEffect = layer_get_fx("e_layer"), quake_layer = fx_get_parameters(quakeEffect)
 if global.timer = 300{
 quake_layer.g_Magnitude = 30

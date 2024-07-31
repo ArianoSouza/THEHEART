@@ -18,3 +18,6 @@ fx_set_parameters(beatEffect,beat_layer)
 if keyboard_check_pressed(vk_space){
 	global.bpm --
 }
+if keyboard_check_pressed(ord("C")){
+	global.bpm ++
+}

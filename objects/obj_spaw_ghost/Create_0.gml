@@ -1,1 +1,1 @@
-is_active = false
+t_spaw = 0

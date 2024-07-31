@@ -96,3 +96,24 @@ global.spaw_locations = [
 			my_y: 416
 		},
 ]
+
+
+
+global.actives = [	{active:false}, //demonic_hand
+					{active:false},	//eyes
+					{active:false}, //simbles
+					{active:false}, //sacred_spear
+					{active:false}, //ghost
+					{active:false}, //invisible
+					{active:false}, //behind_you
+					{active:false}, //say_my_name
+					{active:false}, //doppleganger
+					]
+					
+global.timers_tools = [	{default_time: 420}, // thorn
+						{default_time: 360}, // bandage 
+						{default_time: 300}, // knife
+						{default_time: 420},
+						{default_time: 420},
+]
+
