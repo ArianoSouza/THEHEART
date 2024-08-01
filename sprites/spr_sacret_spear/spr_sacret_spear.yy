@@ -26,7 +26,7 @@
   "origin":5,
   "parent":{
     "name":"ENEMIES",
-    "path":"folders/FINALIZANDO ARTES/ENEMIES.yy",
+    "path":"folders/PRONTO/SPRITES PRONTAS/ENEMIES.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

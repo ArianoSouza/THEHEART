@@ -3,7 +3,7 @@
   "%Name":"spr_tool_knife",
   "bboxMode":0,
   "bbox_bottom":30,
-  "bbox_left":2,
+  "bbox_left":3,
   "bbox_right":29,
   "bbox_top":0,
   "collisionKind":1,

@@ -5,7 +5,7 @@ if global.actives[2].active = false{
 t_spaw = 0
 }else{
 	t_spaw--
-	if t_spaw < 0 and global.timer >= obj_comands.fases[1] and global.timer < obj_comands.fases[2]{
+	if t_spaw < 0 and global.timer >= obj_comands.fases[0] and global.timer < obj_comands.fases[2]{
 		timer_start = true
 		instance_create_layer(320,50,"inst_enemies",obj_enemy_simbles)
 		instance_create_layer(415,210,"inst_enemies",obj_enemy_simbles)

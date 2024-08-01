@@ -30,7 +30,7 @@ else if tool_id_container = 2{
 else if tool_id_container = 3{
 	if keyboard_check(ord("3")){
 			image_blend = c_yellow
-			if timer_bandage <=0{
+			if timer_knife <=0{
 				global.tool_active = "knife"
 		}
 		

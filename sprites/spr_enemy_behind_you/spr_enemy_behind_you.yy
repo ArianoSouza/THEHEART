@@ -5,7 +5,7 @@
   "bbox_bottom":63,
   "bbox_left":0,
   "bbox_right":63,
-  "bbox_top":4,
+  "bbox_top":5,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
@@ -29,7 +29,7 @@
   "origin":4,
   "parent":{
     "name":"ENEMIES",
-    "path":"folders/FINALIZANDO ARTES/ENEMIES.yy",
+    "path":"folders/PRONTO/SPRITES PRONTAS/ENEMIES.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

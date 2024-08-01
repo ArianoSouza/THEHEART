@@ -1,1 +1,1 @@
-is_active = false
+timer = 0

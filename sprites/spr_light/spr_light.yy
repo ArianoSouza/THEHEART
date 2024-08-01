@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"IN GAME SPRITES",
-    "path":"folders/FINALIZANDO ARTES/IN GAME SPRITES.yy",
+    "name":"IN GAME",
+    "path":"folders/PRONTO/SPRITES PRONTAS/IN GAME.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -2,10 +2,10 @@
   "$GMSprite":"",
   "%Name":"spr_enemy_simbles",
   "bboxMode":0,
-  "bbox_bottom":31,
+  "bbox_bottom":29,
   "bbox_left":1,
   "bbox_right":30,
-  "bbox_top":3,
+  "bbox_top":2,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
@@ -15,6 +15,9 @@
     {"$GMSpriteFrame":"","%Name":"a774dbce-8170-4fe9-aacb-48bb7f62299d","name":"a774dbce-8170-4fe9-aacb-48bb7f62299d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"f9371780-f607-4e89-ad42-a6384749d646","name":"f9371780-f607-4e89-ad42-a6384749d646","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"d84b890e-390e-46dd-8847-b2b326078f40","name":"d84b890e-390e-46dd-8847-b2b326078f40","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"50096cb1-e8b0-438e-bc9a-bad0ba6c3f66","name":"50096cb1-e8b0-438e-bc9a-bad0ba6c3f66","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"4fdf0662-9216-4c1a-814d-ef74a8c03240","name":"4fdf0662-9216-4c1a-814d-ef74a8c03240","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"50848542-6fb7-493e-80db-691158011c80","name":"50848542-6fb7-493e-80db-691158011c80","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -28,7 +31,7 @@
   "origin":4,
   "parent":{
     "name":"ENEMIES",
-    "path":"folders/FINALIZANDO ARTES/ENEMIES.yy",
+    "path":"folders/PRONTO/SPRITES PRONTAS/ENEMIES.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
@@ -51,7 +54,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":3.0,
+    "length":6.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -79,6 +82,15 @@
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d84b890e-390e-46dd-8847-b2b326078f40","path":"sprites/spr_enemy_simbles/spr_enemy_simbles.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"541e9bae-a343-4ecb-8e2b-4b66d356f651","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"50096cb1-e8b0-438e-bc9a-bad0ba6c3f66","path":"sprites/spr_enemy_simbles/spr_enemy_simbles.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"454d82f6-e402-4cf1-9c9c-8cf13ef23dcb","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"4fdf0662-9216-4c1a-814d-ef74a8c03240","path":"sprites/spr_enemy_simbles/spr_enemy_simbles.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"f5e82b6f-e1ba-4a14-8bee-12f1eaaed147","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"50848542-6fb7-493e-80db-691158011c80","path":"sprites/spr_enemy_simbles/spr_enemy_simbles.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"d99b99e3-8b7e-45d3-a295-de6a89e20183","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

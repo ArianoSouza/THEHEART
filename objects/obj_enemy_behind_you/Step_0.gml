@@ -1,3 +1,7 @@
+if global.game_over = true{
+	exit
+}
+
 if est = "start"{
 	y-=3
 }else if est = "hurt" {

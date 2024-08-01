@@ -19,3 +19,8 @@ else{
 }
 
 
+if mouse_check_button(mb_left) and global.tool_active = "nd"{
+	image_index = 4
+}else if  mouse_check_button_released(mb_left) and global.tool_active = "nd"{
+	image_index = 0	
+}

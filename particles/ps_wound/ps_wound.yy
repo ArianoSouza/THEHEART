@@ -13,8 +13,8 @@
   ],
   "name":"ps_wound",
   "parent":{
-    "name":"PARTICLES SYSTEMS",
-    "path":"folders/FINALIZANDO ARTES/PARTICLES SYSTEMS.yy",
+    "name":"IN GAME",
+    "path":"folders/PRONTO/SPRITES PRONTAS/IN GAME.yy",
   },
   "resourceType":"GMParticleSystem",
   "resourceVersion":"2.0",

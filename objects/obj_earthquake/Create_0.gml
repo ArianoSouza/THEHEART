@@ -1,1 +1,3 @@
-is_active = false
+timer =50
+active  =false
+timer_active = 600

@@ -108,6 +108,7 @@ global.actives = [	{active:false}, //demonic_hand
 					{active:false}, //behind_you
 					{active:false}, //say_my_name
 					{active:false}, //doppleganger
+					{active:false}   //earthquake
 					]
 					
 global.timers_tools = [	{default_time: 420}, // thorn
@@ -117,3 +118,4 @@ global.timers_tools = [	{default_time: 420}, // thorn
 						{default_time: 420},
 ]
 
+global.font_SMN = font_add_sprite_ext(spr_font_say_my_name,"abcdefghijklmnopqrstuvwxyz_",true,1)
