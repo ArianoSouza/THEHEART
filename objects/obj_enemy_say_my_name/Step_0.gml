@@ -14,6 +14,7 @@
 			tapped_name = ""
 		}
 	if keyboard_check_pressed(vk_enter) and timer > 0 and tapped_name = name{
+		global.spirit++
 		instance_activate_all()
 		instance_destroy(self)
 	}else if keyboard_check_pressed(vk_enter) and timer > 0 and tapped_name != name{

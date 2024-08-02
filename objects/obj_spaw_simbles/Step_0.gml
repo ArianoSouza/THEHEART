@@ -40,7 +40,9 @@ t_spaw = 0
 			global.bpm += 50
 			timer = 0	
 			timer_start = false
-		}else if timer = 599 and !instance_exists(obj_enemy_simbles) {
+		}else if timer = 599 and !instance_exists(obj_enemy_simbles)
+		{
+			global.spirit++
 			timer = 0	
 			timer_start = false
 		}

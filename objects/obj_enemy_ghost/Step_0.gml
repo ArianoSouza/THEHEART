@@ -11,5 +11,6 @@ if image_alpha >= 1{
 }
 
 if image_alpha < 0{
+	global.spirit++
 	instance_destroy(self)
 }

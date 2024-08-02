@@ -114,8 +114,14 @@ global.actives = [	{active:false}, //demonic_hand
 global.timers_tools = [	{default_time: 420}, // thorn
 						{default_time: 360}, // bandage 
 						{default_time: 300}, // knife
-						{default_time: 420},
-						{default_time: 420},
 ]
 
 global.font_SMN = font_add_sprite_ext(spr_font_say_my_name,"abcdefghijklmnopqrstuvwxyz_",true,1)
+
+global.tool_status =[
+						{level:1, value:50},  //thorn
+						{level:1, value:50},  //bandage
+						{level:1, value:50}   //knife
+]
+
+global.spirit = 100
