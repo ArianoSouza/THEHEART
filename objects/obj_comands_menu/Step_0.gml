@@ -1,4 +1,32 @@
-if tool_menu_open = true {
+if exit_game = true{
+	if id_current = 1{
+			if keyboard_check_pressed(vk_enter){
+				game_end()
+			}
+		color_patern[1] = c_red
+		color_patern[2] = c_white
+		color_patern[3] = c_white
+	}
+	else if id_current = 2{
+		if keyboard_check_pressed(vk_enter){
+				exit_game = false
+				id_current = 3
+			}
+		color_patern[1] = c_white
+		color_patern[2] = c_red
+		color_patern[3] = c_white
+	}
+	else if id_current = 3{
+		if keyboard_check_pressed(vk_enter){
+				game_end()
+			}
+		color_patern[1] = c_red
+		color_patern[2] = c_white
+		color_patern[3] = c_white
+	}
+}
+
+else if tool_menu_open = true {
 	if keyboard_check_pressed(vk_escape){ 
 		id_current = 2
 		tool_menu_open =false
@@ -67,7 +95,8 @@ else
 	}
 	else if id_current = 3{
 		if keyboard_check_pressed(vk_enter){
-			game_end()
+			id_current = 2
+			exit_game = true
 		}
 		color_patern[1] = c_white
 		color_patern[2] = c_white
@@ -92,14 +121,6 @@ else
 
 
 
-//animações
-
-t_ani --
-if t_ani < 0{
-	invert*=-1
-layer_hspeed("Assets_1",0.05*invert)
-t_ani = 600
-}
 
 
 

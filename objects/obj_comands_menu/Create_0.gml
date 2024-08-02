@@ -1,5 +1,6 @@
 name_button = ["TRY","TOOLS","EXIT"] 
 id_current = 0
+exit_game = false
 color_patern = [c_white,c_white,c_white,c_white]
 t_ani = 0
 invert = 1

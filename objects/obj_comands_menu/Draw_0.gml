@@ -1,6 +1,22 @@
 draw_self()
 draw_set_font(fMenu)
-if tool_menu_open = true{
+draw_set_halign(fa_left)
+if exit_game = true{
+	draw_roundrect_color_ext(170,130,470,230,15,15,c_black,c_black,0)
+	draw_set_halign(fa_center)
+	draw_text_ext_transformed_color(320,140,"EXIT GAME?",15,100,1,1,0,c_white,c_white,c_white,c_white,1)
+	draw_text_ext_transformed_color(250,200,"Yes",15,100,1,1,0,color_patern[1],color_patern[1],c_white,c_white,1)
+	draw_text_ext_transformed_color(390,200,"no",15,100,1,1,0,color_patern[2],color_patern[2],c_white,c_white,1)
+	draw_set_halign(fa_left)
+	
+	draw_text_transformed_color(60,190,name_button[0],2.5,2.5,0,c_white,c_white,c_white,c_white,1)
+	draw_text_transformed_color(60,240,name_button[1],2.5,2.5,0,c_red,c_red,c_white,c_white,1)
+	draw_text_transformed_color(60,290,name_button[2],2.5,2.5,0,c_white,c_white,c_white,c_white,1)
+	draw_sprite_ext(spr_spirit,0,60,160,1,1,0,c_white,1)
+	draw_text(90,140,global.spirit)
+}
+
+else if tool_menu_open = true{
 	draw_rectangle_color(250,60,605,350,c_black,c_black,c_black,c_black,0)
 	draw_circle_color(320,100,32,c_white,color_patern[1],0)
 	draw_circle_color(420,100,32,c_white,color_patern[2],0)
