@@ -126,14 +126,14 @@ global.tool_status =[
 
 global.spirit = 100
 
-global.enemies_desc = [	{descrption:"a hand of a demon that despites our sacred god. the creature have more than 1000 hands to compansate for the weak body that was given, so weak that is amoust rotten"}, //demonic_hand
-					{descrption:"eyes of a unknow entity. it seems that this entity is trying to watch the ritual, but the act disturbs it. little is know about this entity, but it not seem harmless"},	//eyes
-					{descrption:"another cult is trying to disturb the ritual. They seem to worship the same god as us, but see the birth as a profane act. The simbles represent a ritual to disturb the heart"}, //simbles
-					{active:false}, //sacred_spear
-					{active:false}, //ghost
-					{active:false}, //invisible
-					{active:false}, //behind_you
-					{active:false}, //say_my_name
-					{active:false}, //doppleganger
-					{active:false}   //earthquake
+global.enemies_desc = [	{description:"a hand of a demon that despites our sacred god. the creature have more than 1000 hands to compansate for the weak body that was given, so weak that is amoust rotten"}, //demonic_hand
+					{description:"eyes of a unknow entity. it seems that this entity is trying to watch the ritual, but the act disturbs it. little is know about this entity, but it not seem harmless"},	//eyes
+					{description:"another cult is trying to disturb the ritual. They seem to worship the same god as us, but see the birth as a profane act. The simbles represent a ritual to disturb the heart"}, //simbles
+					{description:"another god who rivalizes with ours sent his minions to try to prevent his birth. The sacred spear is a magic spear that can hurt the skin of any creature, is remembered for the whit and light grey color, amost pale, and the simble of gold infinity"}, //sacred_spear
+					{description:"Some spirits are atracted by the power of the ritual, and tha's seams to distub the ritual"}, //ghost
+					{description:"a enormous creature that uses the invisibility to disturb the ritua"}, //invisible
+					{description:"some entities like to play with us"}, //behind_you
+					{description:"a very powerfull entity that uses his many names as a way to dement humans minds. The only way to suprass it is to get the name correctly. The table shows what we found."}, //say_my_name
+					{description:"a creature that appers from nowere ans tricks you to atack when we are unaware"}, //doppleganger
+					{description:"some entities is so poweful that only the they presence makes the earth shake"}   //earthquake
 					]
