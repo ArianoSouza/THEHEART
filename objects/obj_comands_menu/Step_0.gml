@@ -1,39 +1,71 @@
-if exit_game = true{
+if exit_game =true{
+	if keyboard_check_pressed(vk_down){
+		if id_current >= 2{
+			id_current = 0
+		}
+		id_current++
+	}
+	else if keyboard_check_pressed(vk_up){
+		if id_current <= 1{
+			id_current = 3
+		}
+		id_current--
+	}
+	
 	if id_current = 1{
-			if keyboard_check_pressed(vk_enter){
-				game_end()
-			}
+		if keyboard_check_pressed(vk_enter){
+			game_end()
+		}
+		color_patern[1] = c_red
+		color_patern[2] = c_white
+	}
+	else if id_current = 2{
+		if keyboard_check_pressed(vk_enter){
+		id_current = 4
+		exit_game =false
+		}
+		color_patern[1] = c_white
+		color_patern[2] = c_red
+	}
+}
+else if enemy_bar = true{
+	if keyboard_check_pressed(vk_escape){ 
+		id_current = 3
+		enemy_bar =false
+	}
+	
+	if id_current = 1{
 		color_patern[1] = c_red
 		color_patern[2] = c_white
 		color_patern[3] = c_white
 	}
 	else if id_current = 2{
-		if keyboard_check_pressed(vk_enter){
-				exit_game = false
-				id_current = 3
-			}
 		color_patern[1] = c_white
 		color_patern[2] = c_red
 		color_patern[3] = c_white
 	}
 	else if id_current = 3{
-		if keyboard_check_pressed(vk_enter){
-				game_end()
-			}
-		color_patern[1] = c_red
-		color_patern[2] = c_white
-		color_patern[3] = c_white
-	}
-	else if id_current = 4{
-		if keyboard_check_pressed(vk_enter){
-				exit_game = false
-				id_current = 3
-			}
 		color_patern[1] = c_white
-		color_patern[2] = c_red
-		color_patern[3] = c_white
+		color_patern[2] = c_white
+		color_patern[3] = c_red
+	}
+	
+	
+	if keyboard_check_pressed(vk_down){
+		if id_current >= 3{
+			id_current = 0
+		}
+		id_current++
+	}
+	else if keyboard_check_pressed(vk_up){
+		if id_current <= 1{
+			id_current = 4
+		}
+		id_current--
 	}
 }
+
+
 
 else if tool_menu_open = true {
 	if keyboard_check_pressed(vk_escape){ 
@@ -79,6 +111,19 @@ else if tool_menu_open = true {
 		color_patern[2] = c_white
 		color_patern[3] = c_red
 	
+	}
+	
+	if keyboard_check_pressed(vk_down){
+		if id_current >= 3{
+			id_current = 0
+		}
+		id_current++
+	}
+	else if keyboard_check_pressed(vk_up){
+		if id_current <= 1{
+			id_current = 4
+		}
+		id_current--
 	}
 }
 else
@@ -126,8 +171,7 @@ else
 		color_patern[4] = c_red
 	
 	}
-}
-
+	
 	if keyboard_check_pressed(vk_down){
 		if id_current >= 4{
 			id_current = 0
@@ -140,6 +184,9 @@ else
 		}
 		id_current--
 	}
+}
+
+	
 
 
 
