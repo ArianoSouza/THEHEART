@@ -2,29 +2,82 @@ draw_self()
 draw_set_font(fMenu)
 draw_set_halign(fa_left)
  if enemy_bar= true{
-	draw_rectangle_color(250,90,605,350,c_black,c_black,c_black,c_black,0)
-	draw_circle_color(320,150,32,c_white,color_patern[1],0)
-	draw_circle_color(420,150,32,c_white,color_patern[2],0)
-	draw_circle_color(520,150,32,c_white,color_patern[3],0)
-	draw_sprite_ext(spr_demonic_hand_guide,0,320,150,2,2,0,c_white,1)
-	draw_sprite_ext(spr_enemy_simbles,0,420,150,2,2,0,c_white,1)
-	draw_sprite_ext(spr_eyes,2,520,150,2,2,0,c_white,1)
-	
+	 if id_current > 0 and id_current <=6{
+		draw_rectangle_color(250,90,605,350,c_black,c_black,c_black,c_black,0)
+		draw_circle_color(320,140,32,c_white,color_patern[1],0)
+		draw_circle_color(420,140,32,c_white,color_patern[2],0)
+		draw_circle_color(520,140,32,c_white,color_patern[3],0)
+		draw_circle_color(320,240,32,c_white,color_patern[4],0)
+		draw_circle_color(420,240,32,c_white,color_patern[5],0)
+		draw_circle_color(520,240,32,c_white,color_patern[6],0)
+	 }
+	 else{
+		draw_rectangle_color(250,90,605,350,c_black,c_black,c_black,c_black,0)
+		draw_circle_color(320,140,32,c_white,color_patern[7],0)
+		draw_circle_color(420,140,32,c_white,color_patern[8],0)
+		draw_circle_color(520,140,32,c_white,color_patern[9],0)
+	 }
+		if id_current > 0 and id_current <=6{
+		draw_sprite_ext(spr_demonic_hand_guide,0,320,150,2,2,0,c_white,1)
+		draw_sprite_ext(spr_eyes,0,420,150,2,2,0,c_white,1)
+		draw_sprite_ext(spr_enemy_simbles,2,520,150,2,2,0,c_white,1)
+		draw_sprite_ext(spr_sacret_spear,0,320,240,2,2,0,c_white,1)
+		draw_sprite_ext(spr_enemy_ghost,0,420,240,2,2,0,c_white,1)
+		draw_sprite_ext(spr_enemy_invisible_threat,2,520,240,2,2,0,c_white,1)
+		}
+		else if id_current > 6 and id_current <=12{
+		draw_sprite_ext(spr_enemy_behind_you,0,320,150,2,2,0,c_white,1)
+		draw_sprite_ext(spr_font_say_my_name,0,420,150,2,2,0,c_white,1)
+		draw_sprite_ext(spr_enemy_doppelganger,2,520,150,2,2,0,c_white,1)
+		}
 	if id_current = 1{
 		draw_roundrect_color_ext(250,10,605,70,15,15,c_white,c_white,1)
 		draw_text_ext_transformed(260,15,"Demonic Hand",15,500,0.5,0.5,0)
-		draw_text_ext_transformed(260,25,global.enemies_desc[0].descrption,20,570,0.6,0.6,0)
+		draw_text_ext_transformed(260,25,global.enemies_desc[0].description,20,570,0.6,0.6,0)
 	}
 	if id_current = 2{
 		draw_roundrect_color_ext(250,10,605,70,15,15,c_white,c_white,1)
-		draw_text_ext_transformed(260,15,"Simbles",0,355,0.5,0.5,0)
-		draw_text_ext_transformed(260,25,global.enemies_desc[1].descrption,15,550,0.6,0.6,0)
+		draw_text_ext_transformed(260,15,"Eyes",0,355,0.5,0.5,0)
+		draw_text_ext_transformed(260,25,global.enemies_desc[1].description,15,550,0.6,0.6,0)
 	}
 	if id_current = 3{
 		draw_roundrect_color_ext(250,10,605,70,15,15,c_white,c_white,1)
-		draw_text_ext_transformed(260,15,"Eyes",0,355,0.5,0.5,0)
-		draw_text_ext_transformed(260,25,global.enemies_desc[1].descrption,15,550,0.6,0.6,0)
+		draw_text_ext_transformed(260,15,"Simbles",0,355,0.5,0.5,0)
+		draw_text_ext_transformed(260,25,global.enemies_desc[2].description,15,550,0.6,0.6,0)
 	}
+	if id_current = 4{
+		draw_roundrect_color_ext(250,10,605,70,15,15,c_white,c_white,1)
+		draw_text_ext_transformed(260,15,"Sacred Spear",0,355,0.5,0.5,0)
+		draw_text_ext_transformed(260,25,global.enemies_desc[3].description,15,550,0.6,0.6,0)
+	}
+	if id_current = 5{
+		draw_roundrect_color_ext(250,10,605,70,15,15,c_white,c_white,1)
+		draw_text_ext_transformed(260,15,"Ghost",0,355,0.5,0.5,0)
+		draw_text_ext_transformed(260,25,global.enemies_desc[4].description,15,550,0.6,0.6,0)
+	}
+	if id_current = 6{
+		draw_roundrect_color_ext(250,10,605,70,15,15,c_white,c_white,1)
+		draw_text_ext_transformed(260,15,"Invisible threat",0,355,0.5,0.5,0)
+		draw_text_ext_transformed(260,25,global.enemies_desc[5].description,15,550,0.6,0.6,0)
+	}
+	if id_current = 7{
+		draw_roundrect_color_ext(250,10,605,70,15,15,c_white,c_white,1)
+		draw_text_ext_transformed(260,15,"Behind You",0,355,0.5,0.5,0)
+		draw_text_ext_transformed(260,25,global.enemies_desc[6].description,15,550,0.6,0.6,0)
+	}
+	if id_current = 8{
+		draw_roundrect_color_ext(250,10,605,70,15,15,c_white,c_white,1)
+		draw_set_font(global.font_SMN)
+		draw_text_ext_transformed(260,15,"Say my name",0,355,0.5,0.5,0)
+		draw_set_font(fMenu)
+		draw_text_ext_transformed(260,25,global.enemies_desc[7].description,15,550,0.6,0.6,0)
+	}
+	if id_current = 9{
+		draw_roundrect_color_ext(250,10,605,70,15,15,c_white,c_white,1)
+		draw_text_ext_transformed(260,15,"Doupleganger",0,355,0.5,0.5,0)
+		draw_text_ext_transformed(260,25,global.enemies_desc[8].description,15,550,0.6,0.6,0)
+	}
+	
 	
 	draw_text_transformed_color(60,140,name_button[0],2.5,2.5,0,c_white,c_white,c_white,c_white,1)
 	draw_text_transformed_color(60,190,name_button[1],2.5,2.5,0,c_white,c_white,c_white,c_white,1)

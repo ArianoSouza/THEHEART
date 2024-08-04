@@ -38,28 +38,113 @@ else if enemy_bar = true{
 		color_patern[1] = c_red
 		color_patern[2] = c_white
 		color_patern[3] = c_white
+		color_patern[4] = c_white
+		color_patern[5] = c_white
+		color_patern[6] = c_white
+		color_patern[7] = c_white
+		color_patern[8] = c_white
+		color_patern[9] = c_white
 	}
 	else if id_current = 2{
 		color_patern[1] = c_white
 		color_patern[2] = c_red
 		color_patern[3] = c_white
+		color_patern[4] = c_white
+		color_patern[5] = c_white
+		color_patern[6] = c_white
+		color_patern[7] = c_white
+		color_patern[8] = c_white
+		color_patern[9] = c_white
 	}
 	else if id_current = 3{
 		color_patern[1] = c_white
 		color_patern[2] = c_white
 		color_patern[3] = c_red
+		color_patern[4] = c_white
+		color_patern[5] = c_white
+		color_patern[6] = c_white
+		color_patern[7] = c_white
+		color_patern[8] = c_white
+		color_patern[9] = c_white
+	}
+	else if id_current = 4{
+		color_patern[1] = c_white
+		color_patern[2] = c_white
+		color_patern[3] = c_white
+		color_patern[4] = c_red
+		color_patern[5] = c_white
+		color_patern[6] = c_white
+		color_patern[7] = c_white
+		color_patern[8] = c_white
+		color_patern[9] = c_white
+	}
+	else if id_current = 5{
+		color_patern[1] = c_white
+		color_patern[2] = c_white
+		color_patern[3] = c_white
+		color_patern[4] = c_white
+		color_patern[5] = c_red
+		color_patern[6] = c_white
+		color_patern[7] = c_white
+		color_patern[8] = c_white
+		color_patern[9] = c_white
+	}
+	else if id_current = 6{
+		color_patern[1] = c_white
+		color_patern[2] = c_white
+		color_patern[3] = c_white
+		color_patern[4] = c_white
+		color_patern[5] = c_white
+		color_patern[6] = c_red
+		color_patern[7] = c_white
+		color_patern[8] = c_white
+		color_patern[9] = c_white
+	}
+	else if id_current = 7{
+		color_patern[1] = c_white
+		color_patern[2] = c_white
+		color_patern[3] = c_white
+		color_patern[4] = c_white
+		color_patern[5] = c_white
+		color_patern[6] = c_white
+		color_patern[7] = c_red
+		color_patern[8] = c_white
+		color_patern[9] = c_white
+	}
+	else if id_current = 8{
+		color_patern[1] = c_white
+		color_patern[2] = c_white
+		color_patern[3] = c_white
+		color_patern[4] = c_white
+		color_patern[5] = c_white
+		color_patern[6] = c_white
+		color_patern[7] = c_white
+		color_patern[8] = c_red
+		color_patern[9] = c_white
+	}
+	else if id_current = 9{
+		color_patern[1] = c_white
+		color_patern[2] = c_white
+		color_patern[3] = c_white
+		color_patern[4] = c_white
+		color_patern[5] = c_white
+		color_patern[6] = c_white
+		color_patern[7] = c_white
+		color_patern[8] = c_white
+		color_patern[9] = c_red
 	}
 	
 	
+	
 	if keyboard_check_pressed(vk_down){
-		if id_current >= 3{
+		if id_current >= 9{
 			id_current = 0
 		}
 		id_current++
 	}
 	else if keyboard_check_pressed(vk_up){
 		if id_current <= 1{
-			id_current = 4
+			id_current = 10
 		}
 		id_current--
 	}
