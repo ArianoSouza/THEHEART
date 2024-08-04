@@ -24,6 +24,15 @@ if exit_game = true{
 		color_patern[2] = c_white
 		color_patern[3] = c_white
 	}
+	else if id_current = 4{
+		if keyboard_check_pressed(vk_enter){
+				exit_game = false
+				id_current = 3
+			}
+		color_patern[1] = c_white
+		color_patern[2] = c_red
+		color_patern[3] = c_white
+	}
 }
 
 else if tool_menu_open = true {
@@ -81,6 +90,7 @@ else
 		color_patern[1] = c_red
 		color_patern[2] = c_white
 		color_patern[3] = c_white
+		color_patern[4] = c_white
 	
 	}
 	else if id_current = 2{
@@ -91,29 +101,42 @@ else
 		color_patern[1] = c_white
 		color_patern[2] = c_red
 		color_patern[3] = c_white
+		color_patern[4] = c_white
 	
 	}
 	else if id_current = 3{
+		if keyboard_check_pressed(vk_enter){
+			enemy_bar = true
+			id_current = 1
+		}
+		color_patern[1] = c_white
+		color_patern[2] = c_white
+		color_patern[3] = c_red
+		color_patern[4] = c_white
+	
+	}
+	else if id_current = 4{
 		if keyboard_check_pressed(vk_enter){
 			id_current = 2
 			exit_game = true
 		}
 		color_patern[1] = c_white
 		color_patern[2] = c_white
-		color_patern[3] = c_red
+		color_patern[3] = c_white
+		color_patern[4] = c_red
 	
 	}
 }
 
 	if keyboard_check_pressed(vk_down){
-		if id_current >= 3{
+		if id_current >= 4{
 			id_current = 0
 		}
 		id_current++
 	}
 	else if keyboard_check_pressed(vk_up){
 		if id_current <= 1{
-			id_current = 4
+			id_current = 5
 		}
 		id_current--
 	}

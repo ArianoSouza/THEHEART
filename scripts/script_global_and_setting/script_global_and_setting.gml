@@ -125,3 +125,15 @@ global.tool_status =[
 ]
 
 global.spirit = 100
+
+global.enemies_desc = [	{descrption:"a hand of a demon that despites our sacred god. the creature have more than 1000 hands to compansate for the weak body that was given, so weak that is amoust rotten"}, //demonic_hand
+					{descrption:"eyes of a unknow entity. it seems that this entity is trying to watch the ritual, but the act disturbs it. little is know about this entity, but it not seem harmless"},	//eyes
+					{descrption:"another cult is trying to disturb the ritual. They seem to worship the same god as us, but see the birth as a profane act. The simbles represent a ritual to disturb the heart"}, //simbles
+					{active:false}, //sacred_spear
+					{active:false}, //ghost
+					{active:false}, //invisible
+					{active:false}, //behind_you
+					{active:false}, //say_my_name
+					{active:false}, //doppleganger
+					{active:false}   //earthquake
+					]
