@@ -1,7 +1,8 @@
-name_button = ["TRY","TOOLS","EXIT"] 
+name_button = ["TRY","TOOLS","ENTITIES","EXIT"] 
 id_current = 0
 exit_game = false
-color_patern = [c_white,c_white,c_white,c_white]
+enemy_bar = false
+color_patern = [c_white,c_white,c_white,c_white,c_white,c_white,c_white,c_white,c_white,c_white,c_white]
 t_ani = 0
 invert = 1
 tool_menu_open = false

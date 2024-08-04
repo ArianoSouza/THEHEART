@@ -38,7 +38,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.4.0.137",
+    "IDEVersion":"2024.6.2.162",
   },
   "name":"THE HEART",
   "resources":[
@@ -85,6 +85,7 @@
     {"id":{"name":"spr_block","path":"sprites/spr_block/spr_block.yy",},},
     {"id":{"name":"spr_bpm","path":"sprites/spr_bpm/spr_bpm.yy",},},
     {"id":{"name":"spr_count_timer_tool","path":"sprites/spr_count_timer_tool/spr_count_timer_tool.yy",},},
+    {"id":{"name":"spr_demonic_hand_guide","path":"sprites/spr_demonic_hand_guide/spr_demonic_hand_guide.yy",},},
     {"id":{"name":"spr_demonic_hand","path":"sprites/spr_demonic_hand/spr_demonic_hand.yy",},},
     {"id":{"name":"spr_detalhes_fundo_menu","path":"sprites/spr_detalhes_fundo_menu/spr_detalhes_fundo_menu.yy",},},
     {"id":{"name":"spr_enemy_behind_you","path":"sprites/spr_enemy_behind_you/spr_enemy_behind_you.yy",},},
