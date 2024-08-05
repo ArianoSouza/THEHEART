@@ -1,4 +1,6 @@
-
+ if global.game_over = true{
+ instance_destroy(self)
+ }
 timer_thorn --
 timer_bandage --
 timer_knife --

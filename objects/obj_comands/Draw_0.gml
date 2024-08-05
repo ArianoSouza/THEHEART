@@ -1,12 +1,16 @@
-if global.game_over = true{
-draw_text_transformed(220,180,"RITUAL ADIADO",2,2,0)
-draw_text_transformed(100,180,timer_end_game,2,2,0)
-exit
-}
+
 
 draw_self()
 draw_set_font(fMenu)
 draw_set_halign(fa_center)
+
+if global.game_over = true{
+if timer_end_game < 180{
+	draw_rectangle_color(0,0,640,360,c_black,c_black,c_black,c_black,0)
+	draw_text(320,180,"RITUAL ADIADO")
+}
+exit
+}
 
 if timer_minutes < 10{
 draw_text_transformed_color(320,60,"0"+string(timer_minutes)+":"+show_time_seconds,2,2,0,c_white,c_white,c_red,c_red,1)
@@ -24,6 +28,9 @@ if global.bpm < 50 {
 }
 
 
+
+
+draw_text(80,80,timer_end_game)
 
 
 draw_text_transformed(460,240,global.bpm,2,2,0)

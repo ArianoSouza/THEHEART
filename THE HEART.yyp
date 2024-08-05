@@ -38,7 +38,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.6.2.162",
+    "IDEVersion":"2024.4.1.152",
   },
   "name":"THE HEART",
   "resources":[
@@ -91,12 +91,14 @@
     {"id":{"name":"spr_enemy_behind_you","path":"sprites/spr_enemy_behind_you/spr_enemy_behind_you.yy",},},
     {"id":{"name":"spr_enemy_doppelganger","path":"sprites/spr_enemy_doppelganger/spr_enemy_doppelganger.yy",},},
     {"id":{"name":"spr_enemy_ghost","path":"sprites/spr_enemy_ghost/spr_enemy_ghost.yy",},},
+    {"id":{"name":"spr_enemy_invisible_threat_model","path":"sprites/spr_enemy_invisible_threat_model/spr_enemy_invisible_threat_model.yy",},},
     {"id":{"name":"spr_enemy_invisible_threat","path":"sprites/spr_enemy_invisible_threat/spr_enemy_invisible_threat.yy",},},
     {"id":{"name":"spr_enemy_simbles","path":"sprites/spr_enemy_simbles/spr_enemy_simbles.yy",},},
     {"id":{"name":"spr_eye_damaged","path":"sprites/spr_eye_damaged/spr_eye_damaged.yy",},},
     {"id":{"name":"spr_eyes","path":"sprites/spr_eyes/spr_eyes.yy",},},
     {"id":{"name":"spr_font_say_my_name","path":"sprites/spr_font_say_my_name/spr_font_say_my_name.yy",},},
     {"id":{"name":"spr_fundo_menu","path":"sprites/spr_fundo_menu/spr_fundo_menu.yy",},},
+    {"id":{"name":"spr_heart_explodes","path":"sprites/spr_heart_explodes/spr_heart_explodes.yy",},},
     {"id":{"name":"spr_heart","path":"sprites/spr_heart/spr_heart.yy",},},
     {"id":{"name":"spr_light_bulb","path":"sprites/spr_light_bulb/spr_light_bulb.yy",},},
     {"id":{"name":"spr_light","path":"sprites/spr_light/spr_light.yy",},},
