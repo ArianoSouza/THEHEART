@@ -7,6 +7,8 @@ i=0
 for(z=0;z<string_length(name);z++){
 tap_name+="_"
 }
-
+if global.actives[7].first_death = false{
+		global.actives[7].first_death = true
+	}
 
 

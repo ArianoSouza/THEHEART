@@ -4,3 +4,6 @@ speed = -0.8
 image_xscale= 2
 image_yscale = image_xscale
 image_angle = direction
+if global.actives[5].first_death = false{
+		global.actives[5].first_death = true
+	}

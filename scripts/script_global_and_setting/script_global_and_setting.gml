@@ -99,16 +99,16 @@ global.spaw_locations = [
 
 
 
-global.actives = [	{active:false}, //demonic_hand
-					{active:false},	//eyes
-					{active:false}, //simbles
-					{active:false}, //sacred_spear
-					{active:false}, //ghost
-					{active:false}, //invisible
-					{active:false}, //behind_you
-					{active:false}, //say_my_name
-					{active:false}, //doppleganger
-					{active:false}   //earthquake
+global.actives = [	{active:false,first_death:false}, //demonic_hand
+					{active:false,first_death:false}, //eyes
+					{active:false,first_death:false}, //simbles
+					{active:false,first_death:false}, //sacred_spear
+					{active:false,first_death:false}, //ghost
+					{active:false,first_death:false}, //invisible
+					{active:false,first_death:false}, //behind_you
+					{active:false,first_death:false}, //say_my_name
+					{active:false,first_death:false}, //doppleganger
+					{active:false,first_death:false}  //earthquake
 					]
 					
 global.timers_tools = [	{default_time: 420}, // thorn
@@ -124,7 +124,7 @@ global.tool_status =[
 						{level:1, value:50}   //knife
 ]
 
-global.spirit = 100
+global.spirit = 100000
 
 global.enemies_desc = [	{description:"a hand of a demon that despites our sacred god. the creature have more than 1000 hands to compansate for the weak body that was given, so weak that is amoust rotten"}, //demonic_hand
 					{description:"eyes of a unknow entity. it seems that this entity is trying to watch the ritual, but the act disturbs it. little is know about this entity, but it not seem harmless"},	//eyes

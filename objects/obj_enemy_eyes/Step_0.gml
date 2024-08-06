@@ -21,6 +21,9 @@ else if state = "middle"{
 	if global.tool_active = "thorn" and place_meeting(x,y,obj_mouse){
 		global.tool_active = "nd"
 		global.spirit++
+		if global.actives[1].first_death = false{
+			global.actives[1].first_death = true
+		}
 		obj_tool_container.timer_thorn = global.timers_tools[0].default_time
 		sprite_index = spr_eye_damaged
 		image_index = 0

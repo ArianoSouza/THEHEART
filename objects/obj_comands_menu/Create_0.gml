@@ -1,6 +1,9 @@
 name_button = ["TRY","TOOLS","ENTITIES","EXIT"] 
 id_current = 0
+fase_menu = "start"
 exit_game = false
+start_game = false
+fade_alpha = 1
 enemy_bar = false
 color_patern = [c_white,c_white,c_white,c_white,c_white,c_white,c_white,c_white,c_white,c_white,c_white]
 t_ani = 0

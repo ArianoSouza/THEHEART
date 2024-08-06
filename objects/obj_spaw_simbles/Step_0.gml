@@ -42,6 +42,9 @@ t_spaw = 0
 			timer_start = false
 		}else if timer = 599 and !instance_exists(obj_enemy_simbles)
 		{
+			if global.actives[2].first_death = false{
+				global.actives[2].first_death = true
+			}
 			global.spirit++
 			timer = 0	
 			timer_start = false

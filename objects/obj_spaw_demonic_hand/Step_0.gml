@@ -27,7 +27,7 @@ else{
 	else if global.timer >= obj_comands.fases[1] and global.timer < obj_comands.fases[3]{
 		if t_spaw < 0{
 				instance_create_layer(x,y,"inst_enemies",obj_enemy_demonic_hand)
-				t_spaw = choose(120,240,360,480)//2,4,6,8seg
+				t_spaw = choose(120,240)
 		}
 		if t_move < 0{
 			n = floor(random(array_length(global.spaw_locations)))
@@ -37,7 +37,7 @@ else{
 	else if global.timer >= obj_comands.fases[3] {
 		if t_spaw < 0{
 				instance_create_layer(x,y,"inst_enemies",obj_enemy_demonic_hand)
-				t_spaw = 180
+				t_spaw = 120
 		}
 		if t_move < 0{
 			n = floor(random(array_length(global.spaw_locations)))

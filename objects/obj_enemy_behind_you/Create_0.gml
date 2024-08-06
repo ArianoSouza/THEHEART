@@ -5,3 +5,6 @@ est = "start"
 if x = 475 {
 	image_index = 1
 }
+if global.actives[6].first_death = false{
+		global.actives[6].first_death = true
+	}
