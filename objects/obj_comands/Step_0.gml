@@ -23,6 +23,7 @@ if global.game_over = true{
 		room_goto(rMenu)
 	}
 	timer_end_game --
+	exit
 }
 //bpm 
 

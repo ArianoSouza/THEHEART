@@ -129,7 +129,7 @@ global.spirit = 100
 global.enemies_desc = [	{description:"a hand of a demon that despites our sacred god. the creature have more than 1000 hands to compansate for the weak body that was given, so weak that is amoust rotten"}, //demonic_hand
 					{description:"eyes of a unknow entity. it seems that this entity is trying to watch the ritual, but the act disturbs it. little is know about this entity, but it not seem harmless"},	//eyes
 					{description:"another cult is trying to disturb the ritual. They seem to worship the same god as us, but see the birth as a profane act. The simbles represent a ritual to disturb the heart"}, //simbles
-					{description:"another god who rivalizes with ours sent his minions to try to prevent his birth. The sacred spear is a magic spear that can hurt the skin of any creature, is remembered for the whit and light grey color, amost pale, and the simble of gold infinity"}, //sacred_spear
+					{description:"another god who rivalizes with ours sent his minions to try to prevent his birth. The sacred spear is a magic spear that can hurt the skin of any creature"}, //sacred_spear
 					{description:"Some spirits are atracted by the power of the ritual, and tha's seams to distub the ritual"}, //ghost
 					{description:"a enormous creature that uses the invisibility to disturb the ritua"}, //invisible
 					{description:"some entities like to play with us"}, //behind_you

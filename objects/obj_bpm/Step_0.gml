@@ -1,3 +1,7 @@
+if global.game_over = true{
+instance_destroy(self)
+}
+
 if global.bpm < 120{
 	image_speed = 1
 }else if global.bpm >= 120 and global.bpm < 220{

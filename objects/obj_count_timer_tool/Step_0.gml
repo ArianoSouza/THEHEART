@@ -1,3 +1,7 @@
+if global.game_over = true{
+instance_destroy(self)
+}
+
 if id_tool = 0{
 	if obj_tool_container.timer_thorn<= 0{
 	image_yscale =1
