@@ -3,6 +3,7 @@ if fase_menu = "start"{
 		fase_menu = "current"
 	}
 fade_alpha -= 0.01
+fade_title += 0.01
 }
 else if fase_menu = "change" {
 	if fade_alpha >=1 and exit_game = true{
@@ -31,6 +32,46 @@ else if fase_menu = "current"{
 		if id_current = 1{
 			if keyboard_check_pressed(vk_enter){
 				audio_stop_sound(s_music_menu)
+				if file_exists("save_data.sav"){
+					file_delete("save_data.sav")
+					ini_open("save_data.sav")
+					ini_write_real("data_player","spirit_value",global.spirit)
+					ini_write_real("data_game","cost_thorn",global.tool_status[0].value)
+					ini_write_real("data_game","level_thorn",global.tool_status[0].level)
+					ini_write_real("data_game","cost_bandage",global.tool_status[1].value)
+					ini_write_real("data_game","level_bandage",global.tool_status[1].level)
+					ini_write_real("data_game","cost_knife",global.tool_status[2].value)
+					ini_write_real("data_game","level_knife",global.tool_status[2].level)
+					ini_write_real("data_enemies","see_hand",global.actives[0].first_death)
+					ini_write_real("data_enemies","see_eyes",global.actives[1].first_death)
+					ini_write_real("data_enemies","see_simbles",global.actives[2].first_death)
+					ini_write_real("data_enemies","see_spear",global.actives[3].first_death)
+					ini_write_real("data_enemies","see_ghost",global.actives[4].first_death)
+					ini_write_real("data_enemies","see_invisible",global.actives[5].first_death)
+					ini_write_real("data_enemies","see_behind",global.actives[6].first_death)
+					ini_write_real("data_enemies","see_smn",global.actives[7].first_death)
+					ini_write_real("data_enemies","see_doppler",global.actives[8].first_death)
+					ini_close()
+				}else{
+					ini_open("save_data.sav")
+					ini_write_real("data_player","spirit_value",global.spirit)
+					ini_write_real("data_game","cost_thorn",global.tool_status[0].value)
+					ini_write_real("data_game","level_thorn",global.tool_status[0].level)
+					ini_write_real("data_game","cost_bandage",global.tool_status[1].value)
+					ini_write_real("data_game","level_bandage",global.tool_status[1].level)
+					ini_write_real("data_game","cost_knife",global.tool_status[2].value)
+					ini_write_real("data_game","level_knife",global.tool_status[2].level)
+					ini_write_real("data_enemies","see_hand",global.actives[0].first_death)
+					ini_write_real("data_enemies","see_eyes",global.actives[1].first_death)
+					ini_write_real("data_enemies","see_simbles",global.actives[2].first_death)
+					ini_write_real("data_enemies","see_spear",global.actives[3].first_death)
+					ini_write_real("data_enemies","see_ghost",global.actives[4].first_death)
+					ini_write_real("data_enemies","see_invisible",global.actives[5].first_death)
+					ini_write_real("data_enemies","see_behind",global.actives[6].first_death)
+					ini_write_real("data_enemies","see_smn",global.actives[7].first_death)
+					ini_write_real("data_enemies","see_doppler",global.actives[8].first_death)
+					ini_close()
+				}
 				fase_menu = "change"
 			}
 			color_patern[1] = c_red

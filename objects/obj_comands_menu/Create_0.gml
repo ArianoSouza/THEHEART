@@ -4,6 +4,7 @@ fase_menu = "start"
 exit_game = false
 start_game = false
 fade_alpha = 1
+fade_title = 0
 enemy_bar = false
 color_patern = [c_white,c_white,c_white,c_white,c_white,c_white,c_white,c_white,c_white,c_white,c_white]
 t_ani = 0

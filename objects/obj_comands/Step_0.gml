@@ -28,7 +28,11 @@ else{
 
 	if global.game_over = true{
 		if timer_end_game<0{
-			room_goto(rMenu)
+			if global.timer >= 17999{
+				room_goto(rEndDemo)
+			}else{
+				room_goto(rMenu)
+			}
 		}
 		timer_end_game --
 		exit
@@ -44,6 +48,9 @@ else{
 		audio_stop_all()
 		global.game_over = true
 	}else if global.bpm < 0 {
+		audio_stop_all()
+		global.game_over =true
+	}else if global.timer >= 18000 {
 		audio_stop_all()
 		global.game_over =true
 	}

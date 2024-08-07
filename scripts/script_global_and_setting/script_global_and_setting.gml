@@ -4,6 +4,7 @@ global.timer = 0
 global.bpm = floor(random_range(60,90))
 global.game_over = false
 global.tool_active = "nd"
+global.game_v = "ALPHA 0.1.1"
 
 
 global.spaw_locations = [
@@ -97,19 +98,28 @@ global.spaw_locations = [
 		},
 ]
 
+ini_open("save_data.sav")
 
-
-global.actives = [	{active:false,first_death:false}, //demonic_hand
-					{active:false,first_death:false}, //eyes
-					{active:false,first_death:false}, //simbles
-					{active:false,first_death:false}, //sacred_spear
-					{active:false,first_death:false}, //ghost
-					{active:false,first_death:false}, //invisible
-					{active:false,first_death:false}, //behind_you
-					{active:false,first_death:false}, //say_my_name
-					{active:false,first_death:false}, //doppleganger
+global.actives = [	{active:false,first_death:ini_read_real("data_enemies","see_hand",0)}, //demonic_hand
+					{active:false,first_death:ini_read_real("data_enemies","see_eyes",0)}, //eyes
+					{active:false,first_death:ini_read_real("data_enemies","see_simbles",0)}, //simbles
+					{active:false,first_death:ini_read_real("data_enemies","see_spear",0)}, //sacred_spear
+					{active:false,first_death:ini_read_real("data_enemies","see_ghost",0)}, //ghost
+					{active:false,first_death:ini_read_real("data_enemies","see_invisible",0)}, //invisible
+					{active:false,first_death:ini_read_real("data_enemies","see_behind",0)}, //behind_you
+					{active:false,first_death:ini_read_real("data_enemies","see_smn",0)}, //say_my_name
+					{active:false,first_death:ini_read_real("data_enemies","see_doppler",0)}, //doppleganger
 					{active:false,first_death:false}  //earthquake
 					]
+					
+global.tool_status =[
+	{level:ini_read_real("data_game","level_thorn",1), value:ini_read_real("data_game","cost_thorn",50)},  //thorn
+	{level:ini_read_real("data_game","level_bandage",1), value:ini_read_real("data_game","cost_bandage",50)},  //bandage
+	{level:ini_read_real("data_game","level_knife",1), value:ini_read_real("data_game","cost_knife",50)}   //knife
+]
+global.spirit = ini_read_real("data_player","spirit_value",50)
+
+ini_close()
 					
 global.timers_tools = [	{default_time: 420}, // thorn
 						{default_time: 360}, // bandage 
@@ -118,13 +128,9 @@ global.timers_tools = [	{default_time: 420}, // thorn
 
 global.font_SMN = font_add_sprite_ext(spr_font_say_my_name,"abcdefghijklmnopqrstuvwxyz_",true,1)
 
-global.tool_status =[
-						{level:1, value:50},  //thorn
-						{level:1, value:50},  //bandage
-						{level:1, value:50}   //knife
-]
 
-global.spirit = 100000
+
+
 
 global.enemies_desc = [	{description:"a hand of a demon that despites our sacred god. the creature have more than 1000 hands to compansate for the weak body that was given, so weak that is amoust rotten"}, //demonic_hand
 					{description:"eyes of a unknow entity. it seems that this entity is trying to watch the ritual, but the act disturbs it. little is know about this entity, but it not seem harmless"},	//eyes

@@ -1,9 +1,11 @@
 draw_self()
 draw_set_font(fMenu)
 draw_set_halign(fa_left)
+draw_text_ext_transformed_color(540,340,global.game_v,15,100,0.8,0.8,0,c_white,c_white,c_white,c_white,0.5)
 if fase_menu = "start"{
 	draw_set_alpha(fade_alpha)
 	draw_rectangle_color(0,0,640,360,c_black,c_black,c_black,c_black,0)
+	draw_text_ext_transformed_color(30,15,"THE HEART",15,150,3,5,0,c_white,c_white,c_red,c_red,fade_title)
 }
 else if fase_menu = "change"{
 	draw_set_alpha(fade_alpha)
@@ -11,7 +13,18 @@ else if fase_menu = "change"{
 }
 else if fase_menu = "current" {
 	draw_set_alpha(1)
-	 if enemy_bar= true{
+	draw_text_ext_transformed_color(30,15,"THE HEART",15,150,3,5,0,c_white,c_white,c_red,c_red,fade_title)
+
+	
+	if enemy_bar= true{
+		 
+		 
+		draw_text_transformed_color(60,140,name_button[0],2.5,2.5,0,c_white,c_white,c_white,c_white,1)
+		draw_text_transformed_color(60,190,name_button[1],2.5,2.5,0,c_white,c_white,c_white,c_white,1)
+		draw_text_transformed_color(60,240,name_button[2],2.5,2.5,0,c_red,c_red,c_white,c_white,1)
+		draw_text_transformed_color(60,290,name_button[3],2.5,2.5,0,c_white,c_white,c_white,c_white,1)
+		
+		
 		 if id_current > 0 and id_current <=6{
 			draw_rectangle_color(250,90,605,350,c_black,c_black,c_black,c_black,0)
 			draw_circle_color(320,140,32,c_white,color_patern[1],0)
@@ -146,6 +159,7 @@ else if fase_menu = "current" {
 				draw_text_ext_transformed(265,25,"Say my name",0,355,0.5,0.5,0)
 				draw_set_font(fMenu)
 				draw_text_ext_transformed(260,25,global.enemies_desc[7].description,20,550,0.6,0.6,0)
+				draw_sprite_ext(spr_smn_board,0,140,235,2,2.5,0,c_white,1)
 			}
 			else{
 				draw_roundrect_color_ext(250,10,605,70,15,15,c_white,c_white,1)
@@ -165,13 +179,6 @@ else if fase_menu = "current" {
 				draw_text_ext_transformed(260,25,"???",20,550,0.6,0.6,0)
 			}
 		}
-	
-	
-		draw_text_transformed_color(60,140,name_button[0],2.5,2.5,0,c_white,c_white,c_white,c_white,1)
-		draw_text_transformed_color(60,190,name_button[1],2.5,2.5,0,c_white,c_white,c_white,c_white,1)
-		draw_text_transformed_color(60,240,name_button[2],2.5,2.5,0,c_red,c_red,c_white,c_white,1)
-		draw_text_transformed_color(60,290,name_button[3],2.5,2.5,0,c_white,c_white,c_white,c_white,1)
-
 	}
 
 

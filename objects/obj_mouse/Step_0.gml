@@ -1,3 +1,7 @@
+if global.game_over = true{
+	instance_deactivate_object(self)
+}
+
 x = mouse_x
 y = mouse_y
 

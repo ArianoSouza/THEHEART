@@ -1,5 +1,5 @@
 if global.game_over = true{
-instance_destroy(self)
+	instance_deactivate_object(self)
 }
 
 if id_tool = 0{

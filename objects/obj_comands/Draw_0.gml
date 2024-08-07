@@ -2,19 +2,21 @@
 
 draw_self()
 draw_set_font(fMenu)
+draw_text_ext_transformed_color(560,340,global.game_v,15,100,0.8,0.8,0,c_white,c_white,c_white,c_white,0.5)
 draw_set_halign(fa_center)
 
 
 if fade_fase = true{
 draw_set_alpha(fade_alpha)
 draw_rectangle_color(0,0,640,360,c_black,c_black,c_black,c_black,0)
+draw_set_alpha(1)
 }
 else{
 	draw_set_alpha(1)
 	if global.game_over = true{
 	if timer_end_game < 180{
 		draw_rectangle_color(0,0,640,360,c_black,c_black,c_black,c_black,0)
-		draw_text(320,180,"RITUAL ADIADO")
+		draw_text_transformed_color(320,120,"RITUALE DILATA",3,4,0,c_white,c_white,c_red,c_red,1)
 	}
 	exit
 	}
