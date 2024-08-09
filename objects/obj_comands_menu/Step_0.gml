@@ -15,7 +15,38 @@ else if fase_menu = "change" {
 fade_alpha +=0.01
 }
 else if fase_menu = "current"{
-	if exit_game =true{
+	if volume_config = true{
+		if keyboard_check_pressed(vk_up){
+			global.volume_general += 0.1
+		}else if keyboard_check_pressed(vk_down){
+			global.volume_general -= 0.1
+		}
+	}
+	
+	else if config = true{
+		if keyboard_check_pressed(vk_down){
+				if id_current >= 1{
+					id_current = 0
+				}
+				id_current++
+			}
+			else if keyboard_check_pressed(vk_up){
+				if id_current <= 1{
+					id_current = 2
+				}
+				id_current--
+			}
+			
+			if id_current = 1{
+				if keyboard_check_pressed(vk_enter){
+					config = false
+					volume_config = true
+				}
+			}
+			
+	}
+	
+	else if exit_game =true{
 		if keyboard_check_pressed(vk_down){
 			if id_current >= 2{
 				id_current = 0
@@ -281,6 +312,7 @@ else if fase_menu = "current"{
 			color_patern[2] = c_white
 			color_patern[3] = c_white
 			color_patern[4] = c_white
+			color_patern[5] = c_white
 	
 		}
 		else if id_current = 2{
@@ -292,6 +324,7 @@ else if fase_menu = "current"{
 			color_patern[2] = c_red
 			color_patern[3] = c_white
 			color_patern[4] = c_white
+			color_patern[5] = c_white
 	
 		}
 		else if id_current = 3{
@@ -303,6 +336,7 @@ else if fase_menu = "current"{
 			color_patern[2] = c_white
 			color_patern[3] = c_red
 			color_patern[4] = c_white
+			color_patern[5] = c_white
 	
 		}
 		else if id_current = 4{
@@ -314,18 +348,31 @@ else if fase_menu = "current"{
 			color_patern[2] = c_white
 			color_patern[3] = c_white
 			color_patern[4] = c_red
+			color_patern[5] = c_white
+	
+		}
+		else if id_current = 5{
+			if keyboard_check_pressed(vk_enter){
+				id_current = 1
+				config = true
+			}
+			color_patern[1] = c_white
+			color_patern[2] = c_white
+			color_patern[3] = c_white
+			color_patern[4] = c_white
+			color_patern[5] = c_red
 	
 		}
 	
 		if keyboard_check_pressed(vk_down){
-			if id_current >= 4{
+			if id_current >= 5{
 				id_current = 0
 			}
 			id_current++
 		}
 		else if keyboard_check_pressed(vk_up){
 			if id_current <= 1{
-				id_current = 5
+				id_current = 6
 			}
 			id_current--
 		}

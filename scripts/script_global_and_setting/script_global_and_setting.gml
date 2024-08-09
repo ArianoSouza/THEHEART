@@ -5,6 +5,7 @@ global.bpm = floor(random_range(60,90))
 global.game_over = false
 global.tool_active = "nd"
 global.game_v = "ALPHA 0.1.1"
+global.volume_general = 1
 
 
 global.spaw_locations = [

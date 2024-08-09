@@ -255,6 +255,7 @@ else if fase_menu = "current" {
 	draw_text_transformed_color(60,190,name_button[1],2.5,2.5,0,color_patern[2],color_patern[2],c_white,c_white,1)
 	draw_text_transformed_color(60,240,name_button[2],2.5,2.5,0,color_patern[3],color_patern[3],c_white,c_white,1)
 	draw_text_transformed_color(60,290,name_button[3],2.5,2.5,0,color_patern[4],color_patern[4],c_white,c_white,1)
+	draw_sprite_ext(spr_config_button,0,600,320,2,2,0,color_patern[5],1)
 
 	}
 }
