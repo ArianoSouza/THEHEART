@@ -27,6 +27,7 @@ else if state = "middle"{
 		obj_tool_container.timer_thorn = global.timers_tools[0].default_time
 		sprite_index = spr_eye_damaged
 		image_index = 0
+		audio_play_sound(s_eye,2,0,0.5)
 		state = "end"
 	}
 }

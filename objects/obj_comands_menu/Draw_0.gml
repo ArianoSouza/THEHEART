@@ -16,7 +16,19 @@ else if fase_menu = "current" {
 	draw_text_ext_transformed_color(30,15,"THE HEART",15,150,3,5,0,c_white,c_white,c_red,c_red,fade_title)
 
 	
-	if enemy_bar= true{
+	
+	if config = true{
+		draw_rectangle_color(295,180,590,270,c_black,c_black,c_black,c_black,0)
+		draw_sprite_ext(spr_volume_button,0,315,225,2,2,0,c_red,1)
+		draw_rectangle_color(345,210,345+global.volume_general*10*23.5,240,c_white,c_white,c_red,c_red,0)
+		
+		draw_text_transformed_color(60,140,name_button[0],2.5,2.5,0,c_white,c_white,c_white,c_white,1)
+		draw_text_transformed_color(60,190,name_button[1],2.5,2.5,0,c_white,c_white,c_white,c_white,1)
+		draw_text_transformed_color(60,240,name_button[2],2.5,2.5,0,c_white,c_white,c_white,c_white,1)
+		draw_text_transformed_color(60,290,name_button[3],2.5,2.5,0,c_white,c_white,c_white,c_white,1)
+		draw_sprite_ext(spr_config_button,0,600,320,2,2,0,c_red,1)
+	} 
+	else if enemy_bar= true{
 		 
 		 
 		draw_text_transformed_color(60,140,name_button[0],2.5,2.5,0,c_white,c_white,c_white,c_white,1)

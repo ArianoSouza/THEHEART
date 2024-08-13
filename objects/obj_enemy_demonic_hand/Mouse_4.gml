@@ -5,4 +5,5 @@ if global.tool_active = "nd"{
 speed = -5
 image_index = 1
 global.spirit++
+audio_play_sound(s_demonic_hand,2,0,2)
 }

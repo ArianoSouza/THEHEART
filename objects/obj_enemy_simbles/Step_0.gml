@@ -11,6 +11,7 @@ if timer >=500 {
 		timer_glow++
 	}else if state = 1 {
 	if timer_glow < -90{
+		audio_play_sound(s_simbles,2,0,0.7)
 		state = 0
 		}
 		timer_glow--
@@ -24,6 +25,7 @@ else if timer >= 400 and timer < 500 {
 		timer_glow++
 	}else if state = 1 {
 	if timer_glow < -60{
+		audio_play_sound(s_simbles,2,0,0.7)
 		state = 0
 		}
 		timer_glow--
@@ -37,6 +39,7 @@ else if timer >= 300 and timer < 400 {
 		timer_glow++
 	}else if state = 1 {
 	if timer_glow < -30{
+		audio_play_sound(s_simbles,2,0,0.7)
 		state = 0
 		}
 		timer_glow--
@@ -50,6 +53,7 @@ else if timer >= 200 and timer < 300 {
 		timer_glow++
 	}else if state = 1 {
 	if timer_glow < -15{
+		audio_play_sound(s_simbles,2,0,0.7)
 		state = 0
 		}
 		timer_glow--
@@ -63,6 +67,7 @@ else if timer >= 100 and timer < 200 {
 		timer_glow++
 	}else if state = 1 {
 	if timer_glow < -5{
+		audio_play_sound(s_simbles,2,0,0.57)
 		state = 0
 		}
 		timer_glow--
@@ -76,6 +81,7 @@ else if timer< 100 {
 		timer_glow++
 	}else if state = 1 {
 	if timer_glow < -1{
+		audio_play_sound(s_simbles,2,0,0.7)
 		state = 0
 		}
 		timer_glow--

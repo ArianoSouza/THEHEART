@@ -15,36 +15,22 @@ else if fase_menu = "change" {
 fade_alpha +=0.01
 }
 else if fase_menu = "current"{
-	if volume_config = true{
-		if keyboard_check_pressed(vk_up){
+	
+	
+	 if config = true{
+		if keyboard_check_pressed(vk_up) && global.volume_general < 1{
 			global.volume_general += 0.1
-		}else if keyboard_check_pressed(vk_down){
+			audio_sound_gain(s_music_menu,global.volume_general,0)
+		}else if keyboard_check_pressed(vk_down) && global.volume_general > 0{
 			global.volume_general -= 0.1
+			audio_sound_gain(s_music_menu,global.volume_general,0)
+		}
+		
+		if keyboard_check_pressed(vk_escape){
+			config =false
 		}
 	}
-	
-	else if config = true{
-		if keyboard_check_pressed(vk_down){
-				if id_current >= 1{
-					id_current = 0
-				}
-				id_current++
-			}
-			else if keyboard_check_pressed(vk_up){
-				if id_current <= 1{
-					id_current = 2
-				}
-				id_current--
-			}
 			
-			if id_current = 1{
-				if keyboard_check_pressed(vk_enter){
-					config = false
-					volume_config = true
-				}
-			}
-			
-	}
 	
 	else if exit_game =true{
 		if keyboard_check_pressed(vk_down){
@@ -73,6 +59,7 @@ else if fase_menu = "current"{
 					ini_write_real("data_game","level_bandage",global.tool_status[1].level)
 					ini_write_real("data_game","cost_knife",global.tool_status[2].value)
 					ini_write_real("data_game","level_knife",global.tool_status[2].level)
+					ini_write_real("data_game","volume",global.volume_general)
 					ini_write_real("data_enemies","see_hand",global.actives[0].first_death)
 					ini_write_real("data_enemies","see_eyes",global.actives[1].first_death)
 					ini_write_real("data_enemies","see_simbles",global.actives[2].first_death)
@@ -92,6 +79,7 @@ else if fase_menu = "current"{
 					ini_write_real("data_game","level_bandage",global.tool_status[1].level)
 					ini_write_real("data_game","cost_knife",global.tool_status[2].value)
 					ini_write_real("data_game","level_knife",global.tool_status[2].level)
+					ini_write_real("data_game","volume",global.volume_general)
 					ini_write_real("data_enemies","see_hand",global.actives[0].first_death)
 					ini_write_real("data_enemies","see_eyes",global.actives[1].first_death)
 					ini_write_real("data_enemies","see_simbles",global.actives[2].first_death)

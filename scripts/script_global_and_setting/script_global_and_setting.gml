@@ -119,6 +119,7 @@ global.tool_status =[
 	{level:ini_read_real("data_game","level_knife",1), value:ini_read_real("data_game","cost_knife",50)}   //knife
 ]
 global.spirit = ini_read_real("data_player","spirit_value",50)
+global.volume_general = ini_read_real("data_game","volume",1)
 
 ini_close()
 					

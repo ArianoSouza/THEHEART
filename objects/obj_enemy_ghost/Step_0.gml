@@ -10,6 +10,7 @@ if image_alpha >= 1{
 		global.actives[4].first_death = true
 	}
 	global.bpm += 75
+	audio_stop_sound(s_ghost)
 	instance_destroy(self)
 }
 
@@ -18,5 +19,6 @@ if image_alpha < 0{
 		global.actives[4].first_death = true
 	}
 	global.spirit++
+	audio_stop_sound(s_ghost)
 	instance_destroy(self)
 }
