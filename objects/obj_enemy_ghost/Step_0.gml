@@ -1,5 +1,8 @@
 t_alpha --
 
+if global.game_over = true{
+	instance_destroy(self)
+}
 if t_alpha < 0{
 	image_alpha+= 0.1
 	t_alpha = 60

@@ -1,5 +1,5 @@
 if global.game_over = true{
-	exit
+	instance_destroy(self)
 }
 timer--
 

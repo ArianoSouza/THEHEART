@@ -20,7 +20,7 @@
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"8ac44f8a-4a61-4c29-9eaa-cad85c2542c6","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"8ac44f8a-4a61-4c29-9eaa-cad85c2542c6","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
-    {"$GMImageLayer":"","%Name":"cb978895-1e2d-4391-a67e-536b38094ab6","blendMode":0,"displayName":"default","isLocked":false,"name":"cb978895-1e2d-4391-a67e-536b38094ab6","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"cb978895-1e2d-4391-a67e-536b38094ab6","blendMode":0,"displayName":"default","isLocked":false,"name":"cb978895-1e2d-4391-a67e-536b38094ab6","opacity":7.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_enemy_invisible_threat",
   "nineSlice":null,

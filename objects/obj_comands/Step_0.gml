@@ -72,7 +72,7 @@ else{
 		global.actives[6].active = false
 		global.actives[7].active = false
 		global.actives[8].active = false
-			global.actives[9].active = false
+		global.actives[9].active = false
 		global.actives[choose(1,2,3,4,5,6,7,8,9)].active = true
 		global.actives[choose(1,2,3,4,5,6,7,8,9)].active = true
 	}
@@ -85,7 +85,7 @@ else{
 		global.actives[6].active = false
 		global.actives[7].active = false
 		global.actives[8].active = false
-			global.actives[9].active = false
+		global.actives[9].active = false
 		global.actives[choose(1,2,3,4,5,6,7,8,9)].active = true
 		global.actives[choose(1,2,3,4,5,6,7,8,9)].active = true
 	}
@@ -115,6 +115,128 @@ else{
 		global.actives[choose(1,2,3,4,5,6,7,8)].active = true
 		global.actives[choose(1,2,3,4,5,6,7,8)].active = true
 		global.actives[choose(1,2,3,4,5,6,7,8)].active = true
+	}
+	else if global.timer = fases[6] {
+		global.actives[1].active = false
+		global.actives[2].active = false
+		global.actives[3].active = false
+		global.actives[4].active = false
+		global.actives[5].active = false
+		global.actives[6].active = false
+		global.actives[7].active = false
+		global.actives[8].active = false
+		global.actives[choose(1,2,3,4,5,6,7,8)].active = true
+		global.actives[choose(1,2,3,4,5,6,7,8)].active = true
+		global.actives[choose(1,2,3,4,5,6,7,8)].active = true
+		global.actives[choose(1,2,3,4,5,6,7,8)].active = true
+	}
+	else if global.timer = fases[7] {
+		global.actives[1].active = false
+		global.actives[2].active = false
+		global.actives[3].active = false
+		global.actives[4].active = false
+		global.actives[5].active = false
+		global.actives[6].active = false
+		global.actives[7].active = false
+		global.actives[8].active = false
+		global.actives[choose(1,2,3,4,5,6,7,8)].active = true
+		global.actives[choose(1,2,3,4,5,6,7,8)].active = true
+		global.actives[choose(1,2,3,4,5,6,7,8)].active = true
+		global.actives[choose(1,2,3,4,5,6,7,8)].active = true
+	}
+	else if global.timer = fases[8] {
+			global.actives[1].active = false
+			global.actives[2].active = false
+			global.actives[3].active = false
+			global.actives[4].active = false
+			global.actives[5].active = false
+			global.actives[6].active = false
+			global.actives[7].active = false
+			global.actives[8].active = false
+			global.actives[choose(1,2,3,4,5,6,7,8)].active = true
+			global.actives[choose(1,2,3,4,5,6,7,8)].active = true
+			global.actives[choose(1,2,3,4,5,6,7,8)].active = true
+			global.actives[choose(1,2,3,4,5,6,7,8)].active = true
+			global.actives[choose(1,2,3,4,5,6,7,8)].active = true
+	}
+	else if global.timer = fases[9] {
+			global.actives[1].active = false
+			global.actives[2].active = false
+			global.actives[3].active = false
+			global.actives[4].active = false
+			global.actives[5].active = false
+			global.actives[6].active = false
+			global.actives[7].active = false
+			global.actives[8].active = false
+			global.actives[choose(1,2,3,4,5,6,7,8)].active = true
+			global.actives[choose(1,2,3,4,5,6,7,8)].active = true
+			global.actives[choose(1,2,3,4,5,6,7,8)].active = true
+			global.actives[choose(1,2,3,4,5,6,7,8)].active = true
+			global.actives[choose(1,2,3,4,5,6,7,8)].active = true
+	}
+	else if global.timer = fases[10] {
+			global.actives[1].active = false
+			global.actives[2].active = false
+			global.actives[3].active = false
+			global.actives[4].active = false
+			global.actives[5].active = false
+			global.actives[6].active = false
+			global.actives[7].active = false
+			global.actives[8].active = false
+			global.actives[choose(1,2,3,4,5,6,7,8)].active = true
+			global.actives[choose(1,2,3,4,5,6,7,8)].active = true
+			global.actives[choose(1,2,3,4,5,6,7,8)].active = true
+			global.actives[choose(1,2,3,4,5,6,7,8)].active = true
+			global.actives[choose(1,2,3,4,5,6,7,8)].active = true
+			global.actives[choose(1,2,3,4,5,6,7,8)].active = true
+	}
+	else if global.timer = fases[11] {
+			global.actives[1].active = false
+			global.actives[2].active = false
+			global.actives[3].active = false
+			global.actives[4].active = false
+			global.actives[5].active = false
+			global.actives[6].active = false
+			global.actives[7].active = false
+			global.actives[8].active = false
+			global.actives[choose(1,2,3,4,5,6,7,8)].active = true
+			global.actives[choose(1,2,3,4,5,6,7,8)].active = true
+			global.actives[choose(1,2,3,4,5,6,7,8)].active = true
+			global.actives[choose(1,2,3,4,5,6,7,8)].active = true
+			global.actives[choose(1,2,3,4,5,6,7,8)].active = true
+			global.actives[choose(1,2,3,4,5,6,7,8)].active = true
+	}
+	else if global.timer = fases[12] {
+			global.actives[1].active = false
+			global.actives[2].active = false
+			global.actives[3].active = false
+			global.actives[4].active = false
+			global.actives[5].active = false
+			global.actives[6].active = false
+			global.actives[7].active = false
+			global.actives[8].active = false
+			global.actives[choose(1,2,3,4,5,6,7,8)].active = true
+			global.actives[choose(1,2,3,4,5,6,7,8)].active = true
+			global.actives[choose(1,2,3,4,5,6,7,8)].active = true
+			global.actives[choose(1,2,3,4,5,6,7,8)].active = true
+			global.actives[choose(1,2,3,4,5,6,7,8)].active = true
+			global.actives[choose(1,2,3,4,5,6,7,8)].active = true
+	}
+	else if global.timer = fases[13] {
+			global.actives[1].active = false
+			global.actives[2].active = false
+			global.actives[3].active = false
+			global.actives[4].active = false
+			global.actives[5].active = false
+			global.actives[6].active = false
+			global.actives[7].active = false
+			global.actives[8].active = false
+			global.actives[choose(1,2,3,4,5,6,7,8)].active = true
+			global.actives[choose(1,2,3,4,5,6,7,8)].active = true
+			global.actives[choose(1,2,3,4,5,6,7,8)].active = true
+			global.actives[choose(1,2,3,4,5,6,7,8)].active = true
+			global.actives[choose(1,2,3,4,5,6,7,8)].active = true
+			global.actives[choose(1,2,3,4,5,6,7,8)].active = true
 	}
 }
 

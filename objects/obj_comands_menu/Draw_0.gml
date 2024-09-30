@@ -57,7 +57,7 @@ else if fase_menu = "current" {
 				draw_sprite_ext(spr_demonic_hand_guide,0,320,140,1,1,0,c_white,1)
 				}
 				if global.actives[1].first_death = true{
-				draw_sprite_ext(spr_eyes,0,420,140,1,1,0,c_white,1)
+				draw_sprite_ext(spr_eyes,9,420,140,1,1,0,c_white,1)
 				}
 				if global.actives[2].first_death = true{
 				draw_sprite_ext(spr_enemy_simbles,2,520,140,1,1,0,c_white,1)
